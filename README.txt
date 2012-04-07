@@ -25,7 +25,7 @@ Explanation
 
 The sanitizeInput function finds any instances of math (as determined by the supplied delimiters) and replaces them with a placeholder.  This placeholder can be specified by the user, but it is recommended you use the supplied default of "$0$".  The placeholder has to be something that won't be processed by markdown, and won't ever be PRODUCED by markdown.  The first of these requirements is easy enough to meet, the second can be somewhat more subtle.  If the placeholder already exists in the supplied user text, it is noted by sanitizeInput and will be left alone when reconstruction math after markdown processing.
 
-Each time a valid math block is encountered and replaced by a placeholder, the math within a list (codeblocks) which is then returned by the sanitizeInput function upon completion.  The code is prefixed with either 0 (for a literal occurance of the placeholder in the text), a 1 for inline math or a 2 for a separate equation.
+Each time a valid math block is encountered and replaced by a placeholder, the math is saved in a list (called codeblocks) which is then returned by the sanitizeInput function.  Each entry in codeblocks is prefixed with either 0 (for a literal occurance of the placeholder in the text), a 1 for inline math or a 2 for a separate equation.
 
 The sanitized string from sanitizeInput can then be marked up by markdown without fear of your math being mangled.  Finally, reconstructMath replaces each of the placeholders in the marked up text with the appropriate codeblock.  This final html can then be displayed with appropriate mathjax javascript headers.
 
