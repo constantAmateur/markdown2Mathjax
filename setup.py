@@ -18,7 +18,7 @@ setup(
     version=markdown2Mathjax.__version__,
     author="Matthew Young",
     author_email="matt.d.young@gmail.com",
-    url="https://github.com/constantAmateur/markdown2-Mathjax",
+    url="https://github.com/constantAmateur/markdown2Mathjax",
     download_url="http://pypi.python.org/pypi/markdown2Mathjax/",
     license="LICENSE.txt",
     platforms=["any"],
