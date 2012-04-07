@@ -23,6 +23,7 @@ setup(
     license="LICENSE.txt",
     platforms=["any"],
     py_modules=['markdown2Mathjax'],
+    install_requires = ["markdown2"],
     package_dir={"": "lib"},
     description="Extend markdown2 for use with mathjax",
     long_description=open("README.txt").read(),

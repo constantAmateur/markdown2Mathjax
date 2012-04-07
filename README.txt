@@ -15,6 +15,19 @@ markdown2Mathjax (https://github.com/constantAmateur/markdown2Mathjax) is a simp
 
 (where "sometxt" is a string containing the markdown+mathjax text.)
 
+Installation
+============
+
+markdown2Mathjax is hosted on pypi, so can be installed either from source, using::
+
+    tar zxvf markdown2Mathjax-x.x.x.tar.gz
+    cd markdown2Mathjax-x.x.x
+    python setup.py install
+
+or using pip (or easy_install if you'd prefer)::
+
+    pip install markdown2Mathjax
+
 Usage
 =====
 
