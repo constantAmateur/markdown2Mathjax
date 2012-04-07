@@ -1,8 +1,5 @@
 LICENSE.txt
 README.txt
 setup.py
-markdown2Mathjax/__init__.py
-markdown2Mathjax/reconstructMath.py
-markdown2Mathjax/sanitizeInput.py
-markdown2Mathjax/test/__init__.py
-markdown2Mathjax/test/tests.py
+lib/markdown2Mathjax.py
+test/tests.py
