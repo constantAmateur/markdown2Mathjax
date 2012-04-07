@@ -29,7 +29,7 @@ Each time a valid math block is encountered and replaced by a placeholder, the m
 
 The sanitized string from sanitizeInput can then be marked up by markdown without fear of your math being mangled.  Finally, reconstructMath replaces each of the placeholders in the marked up text with the appropriate codeblock.  This final html can then be displayed with appropriate mathjax javascript headers.
 
-Another way to think about this is than reconstructMath is basically the inverse of sanitizeInput.  So without using markdown in between, nothing should change between the two (except that reconstructMath also processes escapes of special characters).  That is::
+Another way to think about this is than reconstructMath is basically the inverse of sanitizeInput.  So without using markdown in between, nothing should change between the two (except when reconstructMath also does some extra cleanup of the math codeblocks).  That is::
 
     tmp=sanitizeInput(test)
     reconstructMath(tmp[0],tmp[1])==test
